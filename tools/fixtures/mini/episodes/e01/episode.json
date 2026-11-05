@@ -1,0 +1,396 @@
+{
+ "id": "e01",
+ "season": "mini",
+ "number": 1,
+ "title": {
+  "ru": "One",
+  "en": "One",
+  "es": "One"
+ },
+ "minutes": 1,
+ "start": "s01",
+ "scenes": [
+  {
+   "id": "s01",
+   "art": "art/s01.svg",
+   "on_enter": {
+    "clue": "key"
+   },
+   "lines": [
+    {
+     "id": "l1",
+     "speaker": "narrator",
+     "text": {
+      "en": {
+       "A2": "key door night rain street light window car dog cat",
+       "B1": "key door night rain street light window car dog cat"
+      },
+      "es": {
+       "A2": "llave",
+       "B1": "llave"
+      }
+     }
+    },
+    {
+     "id": "l2",
+     "speaker": "ana",
+     "text": {
+      "en": {
+       "A2": "Hi",
+       "B1": "Hi"
+      },
+      "es": {
+       "A2": "Hola",
+       "B1": "Hola"
+      }
+     }
+    }
+   ],
+   "choices": [
+    {
+     "id": "c1",
+     "text": {
+      "en": {
+       "A2": "Trust",
+       "B1": "Trust"
+      },
+      "es": {
+       "A2": "Confiar",
+       "B1": "Confiar"
+      }
+     },
+     "effects": {
+      "rel": {
+       "ana": 1
+      },
+      "set": [
+       "trust"
+      ]
+     },
+     "goto": "s02"
+    },
+    {
+     "id": "c2",
+     "text": {
+      "en": {
+       "A2": "Leave",
+       "B1": "Leave"
+      },
+      "es": {
+       "A2": "Salir",
+       "B1": "Salir"
+      }
+     },
+     "goto": "s02"
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "lines": [
+    {
+     "id": "l1",
+     "speaker": "ana",
+     "text": {
+      "en": {
+       "A2": "Bye",
+       "B1": "Bye"
+      },
+      "es": {
+       "A2": "Adiós",
+       "B1": "Adiós"
+      }
+     }
+    }
+   ],
+   "next": [
+    {
+     "if": {
+      "flags": [
+       "trust"
+      ],
+      "rel": {
+       "ana": 1
+      }
+     },
+     "goto": "s03"
+    },
+    {
+     "goto": "END"
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "lines": [
+    {
+     "id": "l1",
+     "speaker": "narrator",
+     "text": {
+      "en": {
+       "A2": "End",
+       "B1": "End"
+      },
+      "es": {
+       "A2": "Fin",
+       "B1": "Fin"
+      }
+     }
+    }
+   ],
+   "next": "END"
+  }
+ ],
+ "vocabulary": {
+  "en": {
+   "A2": [
+    {
+     "word": "key",
+     "lemma": "key",
+     "pos": "noun",
+     "tr": {
+      "ru": "key",
+      "en": "key",
+      "es": "key"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "door",
+     "lemma": "door",
+     "pos": "noun",
+     "tr": {
+      "ru": "door",
+      "en": "door",
+      "es": "door"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "night",
+     "lemma": "night",
+     "pos": "noun",
+     "tr": {
+      "ru": "night",
+      "en": "night",
+      "es": "night"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "rain",
+     "lemma": "rain",
+     "pos": "noun",
+     "tr": {
+      "ru": "rain",
+      "en": "rain",
+      "es": "rain"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "street",
+     "lemma": "street",
+     "pos": "noun",
+     "tr": {
+      "ru": "street",
+      "en": "street",
+      "es": "street"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "light",
+     "lemma": "light",
+     "pos": "noun",
+     "tr": {
+      "ru": "light",
+      "en": "light",
+      "es": "light"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "window",
+     "lemma": "window",
+     "pos": "noun",
+     "tr": {
+      "ru": "window",
+      "en": "window",
+      "es": "window"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "car",
+     "lemma": "car",
+     "pos": "noun",
+     "tr": {
+      "ru": "car",
+      "en": "car",
+      "es": "car"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "dog",
+     "lemma": "dog",
+     "pos": "noun",
+     "tr": {
+      "ru": "dog",
+      "en": "dog",
+      "es": "dog"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "cat",
+     "lemma": "cat",
+     "pos": "noun",
+     "tr": {
+      "ru": "cat",
+      "en": "cat",
+      "es": "cat"
+     },
+     "scene": "s01",
+     "line": "l1"
+    }
+   ],
+   "B1": [
+    {
+     "word": "key",
+     "lemma": "key",
+     "pos": "noun",
+     "tr": {
+      "ru": "key",
+      "en": "key",
+      "es": "key"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "door",
+     "lemma": "door",
+     "pos": "noun",
+     "tr": {
+      "ru": "door",
+      "en": "door",
+      "es": "door"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "night",
+     "lemma": "night",
+     "pos": "noun",
+     "tr": {
+      "ru": "night",
+      "en": "night",
+      "es": "night"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "rain",
+     "lemma": "rain",
+     "pos": "noun",
+     "tr": {
+      "ru": "rain",
+      "en": "rain",
+      "es": "rain"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "street",
+     "lemma": "street",
+     "pos": "noun",
+     "tr": {
+      "ru": "street",
+      "en": "street",
+      "es": "street"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "light",
+     "lemma": "light",
+     "pos": "noun",
+     "tr": {
+      "ru": "light",
+      "en": "light",
+      "es": "light"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "window",
+     "lemma": "window",
+     "pos": "noun",
+     "tr": {
+      "ru": "window",
+      "en": "window",
+      "es": "window"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "car",
+     "lemma": "car",
+     "pos": "noun",
+     "tr": {
+      "ru": "car",
+      "en": "car",
+      "es": "car"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "dog",
+     "lemma": "dog",
+     "pos": "noun",
+     "tr": {
+      "ru": "dog",
+      "en": "dog",
+      "es": "dog"
+     },
+     "scene": "s01",
+     "line": "l1"
+    },
+    {
+     "word": "cat",
+     "lemma": "cat",
+     "pos": "noun",
+     "tr": {
+      "ru": "cat",
+      "en": "cat",
+      "es": "cat"
+     },
+     "scene": "s01",
+     "line": "l1"
+    }
+   ]
+  },
+  "es": {
+   "A2": [],
+   "B1": []
+  }
+ }
+}

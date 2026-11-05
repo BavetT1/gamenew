@@ -1,0 +1,86 @@
+{
+ "id": "mini",
+ "title": {
+  "ru": "Mini",
+  "en": "Mini",
+  "es": "Mini"
+ },
+ "summary": {
+  "ru": "Test",
+  "en": "Test",
+  "es": "Test"
+ },
+ "episodes": [
+  "e01"
+ ],
+ "free_episodes": [
+  "e01"
+ ],
+ "characters": [
+  {
+   "id": "ana",
+   "name": {
+    "en": "Ana",
+    "es": "Ana"
+   },
+   "role": {
+    "ru": "witness",
+    "en": "witness",
+    "es": "witness"
+   },
+   "voice": {
+    "gender": "female",
+    "pitch": 1.1,
+    "rate": 0.95,
+    "locale": {
+     "en": "en-GB",
+     "es": "es-ES"
+    }
+   },
+   "relationship": true
+  }
+ ],
+ "clues": [
+  {
+   "id": "key",
+   "title": {
+    "ru": "Key",
+    "en": "Key",
+    "es": "Key"
+   },
+   "text": {
+    "ru": "A small key",
+    "en": "A small key",
+    "es": "A small key"
+   }
+  }
+ ],
+ "endings": [
+  {
+   "id": "a",
+   "title": {
+    "ru": "A",
+    "en": "A",
+    "es": "A"
+   },
+   "summary": {
+    "ru": "A",
+    "en": "A",
+    "es": "A"
+   }
+  },
+  {
+   "id": "b",
+   "title": {
+    "ru": "B",
+    "en": "B",
+    "es": "B"
+   },
+   "summary": {
+    "ru": "B",
+    "en": "B",
+    "es": "B"
+   }
+  }
+ ]
+}
